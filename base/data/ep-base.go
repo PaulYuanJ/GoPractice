@@ -10,7 +10,7 @@ map
 struct
 channel
 */
-package base
+package data
 
 import "fmt"
 

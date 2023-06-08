@@ -1,4 +1,4 @@
-package base
+package data
 
 func Example_string() {
 	EP_string()
