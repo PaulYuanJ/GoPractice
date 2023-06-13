@@ -1,16 +1,16 @@
+/*
+	This package provides golang base practice examples.
+*/
 package data
 
 func Example_string() {
 	EP_string()
 }
 
-func Example_int() {
+func Example_number() {
 	EP_string()
 }
 
-func Example_array() {
-	EP_string()
-}
 
 func Example_slice() {
 	EP_string()
