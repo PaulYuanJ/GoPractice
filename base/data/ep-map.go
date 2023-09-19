@@ -20,6 +20,11 @@ func EP_map() {
 		"Label3": map[string]string{"childLabel": "childValue"},
 	}
 
+	// is similar with python code: if "Label3" in map3
+	if value, ok := map3["Label3"]; ok {
+		print(value)
+	}
+
 	fmt.Println(map1, map2, map3)
 
 }

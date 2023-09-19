@@ -1,8 +1,10 @@
 package useful_demos
 
 import (
+	"fmt"
 	"github.com/sirupsen/logrus"
 	"strings"
+	"time"
 )
 
 type LineNumberHook struct{}
@@ -33,7 +35,14 @@ func NewLogger() *logrus.Logger {
 	return log
 }
 
+var myTime = map[string]interface{}{
+	"timestamp": time.Now().Unix(),
+}
+
+func getMyTime() map[string]interface{} {
+	return myTime
+}
+
 func EP_log() {
-	logger := NewLogger()
-	logger.Errorln("Hello")
+	fmt.Println(time.Now().Unix())
 }
